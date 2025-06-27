@@ -52,15 +52,15 @@
       <ul tabindex="0"
         class="dropdown-content z-[1] menu p-2 shadow-2xl bg-base-100 rounded-box w-52 border border-gray-100">
         {% if request.user.is_authenticated %}
-        <li><a href="{% url 'dashboard'%}" class="bangla-text text-blue-600 hover:bg-blue-50">প্রোফাইল</a></li>
-        <li><a href="{% url 'password_change'%}" class="bangla-text text-blue-600 hover:bg-blue-50">পাসওয়ার্ড
+        <li><a href="{% url 'dashboard'%}" class="bangla-text text-blue-600 ">প্রোফাইল</a></li>
+        <li><a href="{% url 'password_change'%}" class="bangla-text text-blue-600 ">পাসওয়ার্ড
             পরিবর্তন</a></li>
         <li><a href="{% url 'logout' %}" class="text-red-600 hover:bg-red-50 bangla-text">লগআউট</a></li>
         {% else %}
-        <li><a href="{% url 'login'%}" class="bangla-text text-blue-600 hover:bg-blue-50">লগইন</a></li>
-        <li><a href="{% url 'register'%}" class="bangla-text text-blue-600 hover:bg-blue-50">রেজিস্ট্রেশন</a></li>
+        <li><a href="{% url 'login'%}" class="bangla-text text-blue-600 ">লগইন</a></li>
+        <li><a href="{% url 'register'%}" class="bangla-text text-blue-600 ">রেজিস্ট্রেশন</a></li>
         {% endif %}
-        <li><a href="" class="bangla-text text-blue-600 hover:bg-blue-50">পাসওয়ার্ড ভুলে গেছেন?</a></li>
+        <li><a href="" class="bangla-text text-blue-600 ">পাসওয়ার্ড ভুলে গেছেন?</a></li>
       </ul>
     </div>
   </div>
